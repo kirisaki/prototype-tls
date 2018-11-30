@@ -1,0 +1,32 @@
+name:                prototype-tls
+version:             0.1.0.0
+github:              "kirisaki/prototype-tls"
+license:             BSD3
+author:              "Akihito KIRISAKI"
+maintainer:          "kirisaki@klaraworks.net"
+copyright:           "Copyright: (c) 2018 Akihito KIRISAKI"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+description:         Please see the README on GitHub at <https://github.com/kirisaki/prototype-tls#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+executables:
+  tls-server:
+    main:                Main.hs
+    source-dirs:         server
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+  tls-client:
+    main:                Main.hs
+    source-dirs:         client
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N

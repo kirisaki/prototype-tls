@@ -1,0 +1,9 @@
+resolver: lts-12.20
+packages:
+- .
+- location:
+    git: git@github.com:vincenthz/hs-tls
+    commit: 11cc2ef81848356ce21a28d17209c8e52d4103b0
+    subdirs:
+    - core
+  extra-dep: true
